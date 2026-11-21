@@ -1,0 +1,25 @@
+.export _decade_floor
+.segment "RODATA"
+_decade_floor:
+    .dword $00000000,$00000000,$00000000,$00000007
+    .dword $00000047,$000002c9,$00001be0,$000116c2
+    .dword $000ae397,$006ce3ee,$02081cea,$03aa2424
+    .dword $0554ad2d,$0704ec3c,$08a6274b,$0a4fb11e
+    .dword $0c01ceb3,$0da2425f,$0f4ad2f7,$10fd87b5
+    .dword $129e74d1,$14461206,$15f79687,$179abe14
+    .dword $19416d9a,$1af1c900,$1c971da0,$1e3ce508
+    .dword $1fec1e4a,$219392ee,$233877aa,$24e69594
+    .dword $26901d7c,$283424dc,$29e12e13,$2b8cbccc
+    .dword $2d2febff,$2edbe6fe,$3089705f,$322bcc77
+    .dword $33d6bf94,$358637bd,$3727c5ac,$38d1b717
+    .dword $3a83126e,$3c23d70a,$3dcccccc,$3f800000
+    .dword $41200000,$42c80000,$447a0000,$461c4000
+    .dword $47c35000,$49742400,$4b189680,$4cbebc20
+    .dword $4e6e6b28,$501502f9,$51ba43b7,$5368d4a5
+    .dword $551184e7,$56b5e620,$58635fa9,$5a0e1bc9
+    .dword $5bb1a2bc,$5d5e0b6b,$5f0ac723,$60ad78eb
+    .dword $6258d726,$64078678,$65a96816,$6753c21b
+    .dword $69045951,$6aa56fa5,$6c4ecb8f,$6e013f39
+    .dword $6fa18f07,$7149f2c9,$72fc6f7c,$749dc5ad
+    .dword $76453719,$77f684df,$799a130b,$7b4097ce
+    .dword $7cf0bdc2,$7e967699,$7f7fffff,$7f7fffff

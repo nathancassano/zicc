@@ -1,0 +1,18 @@
+; Preserve the standalone io.o contract for existing manual links
+; The automatic ROM builder uses io.s, errno.s, and ctype/*.s as independent units
+.include "io.s"
+.include "errno.s"
+.include "ctype/isalnum.s"
+.include "ctype/isalpha.s"
+.include "ctype/islower.s"
+.include "ctype/isupper.s"
+.include "ctype/isdigit.s"
+.include "ctype/isxdigit.s"
+.include "ctype/iscntrl.s"
+.include "ctype/isgraph.s"
+.include "ctype/isspace.s"
+.include "ctype/isblank.s"
+.include "ctype/isprint.s"
+.include "ctype/ispunct.s"
+.include "ctype/tolower.s"
+.include "ctype/toupper.s"

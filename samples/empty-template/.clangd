@@ -1,0 +1,16 @@
+CompileFlags:
+  Add:
+    - -xc
+    - -std=c11
+    - -Iinclude
+    - -I../include
+    - --target=i686-pc-windows
+    - -D__near=
+    - -D__far=
+    - -D__huge=
+    - -D__zpage=
+    - -D__dpage=
+    - -D__loram=
+    - -D__noinline=
+    - '-D__interrupt(x)='
+    - '-D__section(x)='

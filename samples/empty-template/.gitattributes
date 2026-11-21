@@ -1,0 +1,15 @@
+# Store text with LF in Git and use CRLF in the working tree
+* text=auto eol=crlf
+
+# Keep the build entry point LF
+/Makefile text eol=lf
+
+# Generated and authored binaries must never undergo text conversion
+*.bin binary
+*.cgr binary
+*.chr binary
+*.col binary
+*.dbg binary
+*.mpd binary
+*.png binary
+*.sfc binary

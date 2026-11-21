@@ -1,0 +1,13 @@
+{
+  "source": {
+    "project": "Project-authored 65816 binary32 runtime developed in the local VBCC fork",
+    "introduced_commit": "db789752d0f4ad4776512a5e190f18f3f9f512b6",
+    "commit": "6f12bcfa0b4366bd21ad9f146d3766bd1eb8a468",
+    "directory": "machines/65816/runtime/ieee32"
+  },
+  "source_sha256": {
+    "engine.s": "79df16e3ee0cd0432d2a456f3f5dbf60d4cba03e0ce76b7e9fbefc4c89b4854b",
+    "product.inc": "35bc29f3915f49ef16fc949641890a83a40a3c4b4c2f9030facd568420748a88",
+    "decimal.c": "8e6cd55e998a8c10cb849a7832bc9dfa159cb32268f7cb5dc4933023304d992b"
+  }
+}
