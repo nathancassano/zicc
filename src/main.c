@@ -251,7 +251,7 @@ static Type enum_specifier(Parser *p);
 static void structure_definition(Parser *p,Structure *record);
 static void free_expression(Expr *e);
 static void free_statements(Statement *s);
-static _Noreturn void error_at(Location at, const char *format, ...)
+static void error_at(Location at, const char *format, ...)
 {
     va_list args;
     fprintf(stderr, "%s:%d:%d: error: ", at.path, at.line, at.column);
