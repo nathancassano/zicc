@@ -794,7 +794,10 @@ static const char *default_include_directory(const char *argv0, char *directory,
             /* An empty PATH entry names the current directory */
             int n = snprintf(candidate, sizeof candidate, "%.*s/%s",
                              length ? (int)length : 1, length ? search : ".", argv0);
-            if (n > 0 && (size_t)n < sizeof candidate && access(candidate, X_OK) == 0)
+            /* Like the shell, take only a regular file: a directory passes X_OK too */
+            if (n > 0 && (size_t)n < sizeof candidate &&
+                stat(candidate, &attributes) == 0 && S_ISREG(attributes.st_mode) &&
+                access(candidate, X_OK) == 0)
                 program = realpath(candidate, NULL);
             search = end ? end + 1 : NULL;
         }
